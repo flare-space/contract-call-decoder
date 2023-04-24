@@ -1,0 +1,7 @@
+services:
+  appserver:
+    container_name: ${COMPOSE_PROJECT_NAME}-server
+    image: ${DOCKER_IMAGE_URL}
+    ports:
+      - "127.0.0.1:${LISTEN_PORT}:3000"
+    restart: unless-stopped

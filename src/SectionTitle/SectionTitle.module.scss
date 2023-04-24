@@ -1,0 +1,33 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  width: 100%;
+  margin-bottom: 3rem;
+
+  h1 {
+    font-size: 37px;
+    color: #d93f0b; 
+    margin: 0;
+  }
+
+  svg {
+    fill: #d93f0b;
+  }
+
+  &:after {
+    content: "";
+    position: absolute;
+    display: block;
+    height: 1px;
+    width: 100%;
+    background-color: #d8d8d8;
+    bottom: -1rem;
+
+    @media (min-width: 768px) {
+      width: 155px;
+    }
+    
+  }
+}
